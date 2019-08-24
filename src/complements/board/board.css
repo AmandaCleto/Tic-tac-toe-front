@@ -1,0 +1,55 @@
+#blocoPai{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+  }
+  #bloco11{
+    background-color: black;
+    width: 30%;
+    height: 30%;
+  } 
+  #bloco12{
+    background-color: blue;
+    width: 30%;
+    height: 30%;
+  }
+  
+  #bloco13{
+    background-color: black;
+    width: 30%;
+    height: 30%;  
+  }
+  #bloco21{
+    background-color: blue;
+    width: 30%;
+    height: 30%;
+    
+  }
+  #bloco22{
+    background-color: black;
+    width: 30%;
+    height: 30%;
+  }
+  #bloco23{
+    background-color: blue;
+    width: 30%;
+    height: 30%;
+  }
+  #bloco31{
+    background-color: black;
+    width: 30%;
+    height: 30%;
+  }
+  #bloco32{
+    background-color: blue;
+    width: 30%;
+    height: 30%;  
+  }
+  #bloco33{
+    background-color: black;
+    width: 30%;
+    height: 30%; 
+  }
