@@ -3,6 +3,8 @@ import React, { PureComponent } from 'react';
 import Header from './components/header/header';
 import './App.css';
 import { Router, Switch, Route } from 'react-router-dom';
+import Public from './pages/public'; 
+import GameBoard from './pages/gameboard';
 
 const history = createBrowserHistory();
 
