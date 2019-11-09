@@ -12,14 +12,14 @@ export default class App extends PureComponent {
   render() {
     return (
       <div className="App">
-        <Header />
         <Router history={history}>
-            <Switch>
-                <Route path='/' exact component={Public} />
-                <Route path='/gameboard' exact component={GameBoard}/>
-            </Switch>
+          <Header />
+      
+          <Switch>
+            <Route path='/gameboard' exact component={GameBoard}/>
+            <Route path='/' component={Public} />
+          </Switch>
         </Router>
-
       </div>
     ); 
   } 

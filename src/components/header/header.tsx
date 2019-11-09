@@ -1,13 +1,22 @@
 import React, { PureComponent } from 'react';
-import './header.css';  
+import {Link} from 'react-router-dom';
+import styles from './style';
+import withStyles from 'react-jss';
 
-export default class header extends PureComponent {
-    public render() {
+ 
+class Header extends PureComponent { 
+    public render(): React.ReactNode {
+        const classes = styles();
         return ( 
-        <header id="header">
-           <h1>Tik Tak Toe - Master</h1>
-        </header>    
+        <header className={classes.header}>
+           <h1>Tik Tak Toe - Master</h1> 
+            <div className="button">
+                <Link to='/login'>Login</Link>
+                <Link to='/register'>Register</Link>
+            </div>
+        </header>  
         );       
     }
-}
+} 
 
+export default withStyles(styles)(Header);
