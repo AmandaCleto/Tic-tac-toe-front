@@ -1,6 +1,6 @@
 import { createBrowserHistory } from 'history';
 import React, { PureComponent } from 'react';
-import Header from './components/header/header';
+import Header from './components/header/index';
 import './App.css';
 import { Router, Switch, Route } from 'react-router-dom';
 import Public from './pages/public'; 

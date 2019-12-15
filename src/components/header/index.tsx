@@ -1,14 +1,11 @@
 import React, { PureComponent } from 'react';
 import {Link} from 'react-router-dom';
-import styles from './style';
-import withStyles from 'react-jss';
-
+import './style.css';
  
 class Header extends PureComponent { 
     public render(): React.ReactNode {
-        const classes = styles();
         return ( 
-        <header className={classes.header}>
+        <header>
            <h1>Tik Tak Toe - Master</h1> 
             <div className="button">
                 <Link to='/login'>Login</Link>
@@ -19,4 +16,4 @@ class Header extends PureComponent {
     }
 } 
 
-export default withStyles(styles)(Header);
+export default Header;
