@@ -104,9 +104,10 @@
      justify-content: center;
  }
  .side1{    
-    
-
+    background-image:url('bg1.png');
+    background-position: top;
  }
  .side2{    
-   
+    background-image:url('bg2.png');
+    background-position: top;
  }

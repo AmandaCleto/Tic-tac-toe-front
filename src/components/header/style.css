@@ -1,8 +1,9 @@
 header{
     display: flex; 
     align-items: center; 
-    background-image: linear-gradient(to top right, rgb(149, 201, 240) 6%, 
-    rgb(75, 139, 189) 39%, rgb(19, 78, 122) 62%,  rgb(2, 28, 53) 84%);
+    /*background-image: linear-gradient(to top right, rgb(149, 201, 240) 6%, 
+    rgb(75, 139, 189) 39%, rgb(19, 78, 122) 62%,  rgb(2, 28, 53) 84%);*/
+    background-image: linear-gradient(to bottom, rgb(75, 139, 189) 90%, rgb(2, 40, 50) 10%);
     position: relative;
 }
 
@@ -13,8 +14,50 @@ header{
 
 h1{
     margin: 0 auto; 
+    text-shadow: 0.1em 0.1em 0.6em white;
 }
-
+.symbol{
+    font-family: 'Shadows Into Light', cursive;
+    position: absolute;
+    margin: 16px;
+    font-size: 4em;
+    color: white;
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;  
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;     
+    user-select: none;  
+    transition:all 0.3s ease;
+}
+.symbol:hover{
+    font-size: 4.5em;  
+    color: rgb(2, 40, 50);
+}
+.symbol:active{
+    -webkit-animation: swing 0.3s ease infinite;
+    animation: swing 0.3s ease infinite;
+    -webkit-animation-iteration-count: 0.3s;
+    animation-iteration-count: 0.3s;
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+    30%
+    {
+        -webkit-transform: translateY(-3px);
+       transform: translateY(-3px);
+    } 
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
 /*button*/
 a{
     text-decoration: none;
@@ -25,7 +68,13 @@ a{
     padding-right: 12px; 
 } 
 a:hover{
-    color: rgb(233, 233, 233); 
-
+    color: rgb(2, 40, 50); 
 }
 
+
+/*media query*/
+@media screen and (max-width:767px){
+   .login{display:none;}
+   .register{display:none;}
+   .symbol{display:none;}
+}
