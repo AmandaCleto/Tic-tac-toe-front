@@ -3,9 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import {Link} from 'react-router-dom';
 import './style.css';
-import logo from './ttt.gif';
-
-
+import logo from '../../../../assets/img/ttt.gif';
 
 export default class Login extends PureComponent<{},{}> {
     render(): React.ReactNode{ 
@@ -32,7 +30,7 @@ export default class Login extends PureComponent<{},{}> {
                     </form>    
                 </div> 
             </Grid>
-            <Hidden smDown>
+            <Hidden xsDown>
                 <Grid item xs={12} sm={8}> 
                 <div className="form-2">         
                         <img src={logo} alt="tic-tac-toe gif" />

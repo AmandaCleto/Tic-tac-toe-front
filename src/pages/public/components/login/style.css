@@ -42,12 +42,16 @@
      background: rgba(255, 255, 255, 0.644);
  }
  
- .checkbox > input, .checkbox > label{
+ .checkbox > input, .checkbox > label {
      color:rgb(255, 255, 255); 
      margin-top: 12px; 
      margin-bottom: 40px;
  }
  
+ .checkbox > label {
+    line-height: 0.9;
+ }
+
  .checkbox{
      display: flex;
      justify-content: flex-start;

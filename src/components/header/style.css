@@ -1,4 +1,4 @@
-header{
+header {
     display: flex; 
     align-items: center; 
     background-image: linear-gradient(to top right, rgb(149, 201, 240) 6%, 
@@ -6,17 +6,28 @@ header{
     position: relative;
 }
 
-.button{
+.buttons {
     position: absolute;
     right: 0;
 }
 
-h1{
-    margin: 0 auto; 
+h1 {
+    /* font-family: 'Darker Grotesque', sans-serif; */
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
 /*button*/
-a{
+a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em; 
@@ -24,8 +35,7 @@ a{
     font-family: sans-serif;
     padding-right: 12px; 
 } 
-a:hover{
+a:hover {
     color: rgb(233, 233, 233); 
-
 }
 
