@@ -7,8 +7,9 @@ class Header extends PureComponent {
     public render(): React.ReactNode {
         return ( 
         <header>
+           <h2 className="symbol">#</h2>
            <h1>Tik Tak Toe - Master</h1> 
-            <Hidden smDown>
+           <Hidden smDown>
                 <div className="buttons">
                     <Link to='/login'>Login</Link>
                     <Link to='/register'>Register</Link>

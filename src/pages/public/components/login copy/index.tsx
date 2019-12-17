@@ -3,12 +3,18 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import {Link} from 'react-router-dom';
 import './style.css';
-import logo from '../../../../assets/img/ttt.gif';
+
 
 export default class Login extends PureComponent<{},{}> {
     render(): React.ReactNode{ 
         return( 
-        <Grid className='background' container justify='center'>
+        <Grid container>
+            <Hidden smDown>
+                <Grid item xs={12} sm={3}> 
+                <div className="side side1">         
+                 </div>
+                </Grid>
+            </Hidden>
             <Grid item xs={12} sm={6}> 
                 <div className="form">
                     <div className="buttom-sign-up">
@@ -33,6 +39,12 @@ export default class Login extends PureComponent<{},{}> {
                     </form>    
                 </div> 
             </Grid>
+            <Hidden smDown>
+                <Grid item xs={12} sm={3}> 
+                <div className="side side2">         
+                 </div>
+                </Grid>
+            </Hidden>
         </Grid> 
         );
     };

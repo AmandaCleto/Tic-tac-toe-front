@@ -48,16 +48,12 @@
      background: rgba(255, 255, 255, 0.644);
  }
  
- .checkbox > input, .checkbox > label {
+ .checkbox > input, .checkbox > label{
      color:rgb(255, 255, 255); 
      margin-top: 12px; 
      margin-bottom: 40px;
  }
  
- .checkbox > label {
-    line-height: 0.9;
- }
-
  .checkbox{
      display: flex;
      justify-content: flex-start;
@@ -98,10 +94,6 @@
      font-size: 20px;
      color: rgb(75, 139, 189);
  }
-
- .background {
-     background: red;
- }
  
  
  /**/
@@ -110,4 +102,12 @@
      height: calc(100vh - 78px);
      display: flex;
      justify-content: center;
+ }
+ .side1{    
+    background-image:url('bg1.png');
+    background-position: top;
+ }
+ .side2{    
+    background-image:url('bg2.png');
+    background-position: top;
  }
