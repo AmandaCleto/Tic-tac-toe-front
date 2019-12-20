@@ -1,9 +1,8 @@
 import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid'; 
-import Hidden from '@material-ui/core/Hidden';
 import {Link} from 'react-router-dom';
-import './style.css';
-import logo from '../../../../assets/img/ttt.gif';
+import '../login/style.css';
+
 
 export default class Login extends PureComponent<{},{}> {
     render(): React.ReactNode{ 
