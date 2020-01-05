@@ -2,7 +2,11 @@ import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid'; 
 import {Link} from 'react-router-dom';
 import './style.css';
+<<<<<<< HEAD
 import { login } from '../../../../services/auth';
+=======
+
+>>>>>>> e66f2024255c07cc669bc6de804851a48de4f425
 
 export default class Login extends PureComponent<{},{}> {
     render(): React.ReactNode {

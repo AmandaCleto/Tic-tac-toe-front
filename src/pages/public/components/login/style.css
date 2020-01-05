@@ -1,7 +1,9 @@
 .form{
     width: 100%;
     background: #fa7b4c;
-    height: calc(100vh - 78px); 
+    height: calc(100vh - 118px); 
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,14 +102,10 @@
  }
 
  .background {
+<<<<<<< HEAD
      background: url('../../../../assets/img/ttt.gif') center cover no-repeat;
- }
- 
- 
- /**/
- .side{ 
-     width: 100%;
-     height: calc(100vh - 78px);
-     display: flex;
-     justify-content: center;
+=======
+    background-image: url('../../../../assets/img/background_login.jpeg');
+    background-size: 100%;
+>>>>>>> e66f2024255c07cc669bc6de804851a48de4f425
  }
