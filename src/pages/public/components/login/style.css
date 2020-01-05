@@ -102,10 +102,6 @@
  }
 
  .background {
-<<<<<<< HEAD
-     background: url('../../../../assets/img/ttt.gif') center cover no-repeat;
-=======
     background-image: url('../../../../assets/img/background_login.jpeg');
     background-size: 100%;
->>>>>>> e66f2024255c07cc669bc6de804851a48de4f425
  }
