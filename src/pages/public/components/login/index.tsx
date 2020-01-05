@@ -1,7 +1,7 @@
 import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid'; 
 import {Link} from 'react-router-dom';
-import '../login/style.css';
+import './style.css';
 
 
 export default class Login extends PureComponent<{},{}> {
