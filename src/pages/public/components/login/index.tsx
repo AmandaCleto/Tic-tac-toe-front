@@ -1,12 +1,11 @@
 import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid'; 
-import Hidden from '@material-ui/core/Hidden';
 import {Link} from 'react-router-dom';
 import './style.css';
-import logo from '../../../../assets/img/ttt.gif';
+import { login } from '../../../../services/auth';
 
 export default class Login extends PureComponent<{},{}> {
-    render(): React.ReactNode{ 
+    render(): React.ReactNode {
         return( 
         <Grid className='background' container justify='center'>
             <Grid item xs={12} sm={6}> 
@@ -25,7 +24,7 @@ export default class Login extends PureComponent<{},{}> {
                             <label htmlFor="checkbox">Remember me</label>
                         </div>
                         <div className="buttom-sign-in">
-                            <input name="buttom" value="Sign-in" type="submit"/> 
+                            <input name="buttom" value="Sign-in" type="submit" onClick={(e) => login(e)}/> 
                         </div>
                         <span>
                             New here? Create your account <i><Link to="/register">now!</Link></i>
