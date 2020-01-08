@@ -4,7 +4,12 @@ import {Link} from 'react-router-dom';
 import './style.css';
 import { login } from '../../../../services/auth';
 
-export default class Login extends PureComponent<{},{}> {
+interface IStates {
+    email : string;
+    password : string;
+} 
+
+export default class Login extends PureComponent<{}, IStates> {
     render(): React.ReactNode {
         return( 
         <Grid className='background' container justify='center'>
@@ -15,16 +20,16 @@ export default class Login extends PureComponent<{},{}> {
                     </div> 
                     <form className="inside-form">
                         <label htmlFor="email">E-mail</label>
-                        <input name="email" type="email"/>
+                        <input name="email" type="email" onChange={(e) => this.setState({email: e.target.value})}/>
                         <label htmlFor="password">Password</label>
-                        <input name="password" type="password"/> 
+                        <input name="password" type="password" onChange={(e) => this.setState({password: e.target.value})}/> 
                     
                         <div className="checkbox">
                             <input name="checkbox" type="checkbox"/>
                             <label htmlFor="checkbox">Remember me</label>
                         </div>
                         <div className="buttom-sign-in">
-                            <input name="buttom" value="Sign-in" type="submit" onClick={(e) => login(e)}/> 
+                            <input name="buttom" value="Sign-in" type="submit" onClick={(e) => login(e, this.state.email, this.state.password)}/> 
                         </div>
                         <span>
                             New here? Create your account <i><Link to="/register">now!</Link></i>

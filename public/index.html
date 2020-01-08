@@ -22,14 +22,28 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.6.0/firebase-app.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBO0xOpqpWB6fCUF0Sbt1BmD7wpDkOshjQ",
+        authDomain: "ttt-auth.firebaseapp.com",
+        databaseURL: "https://ttt-auth.firebaseio.com",
+        projectId: "ttt-auth",
+        storageBucket: "ttt-auth.appspot.com",
+        messagingSenderId: "45877099215",
+        appId: "1:45877099215:web:f9a0e6a689e8e4f4d2d5ba",
+        measurementId: "G-PMMXD5H2SH"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics(); 
+  </script>
   </body>
 </html>

@@ -1,17 +1,26 @@
-export const firebaseconfig = {
-    apiKey: "api-key",
-    authDomain: "project-id.firebaseapp.com",
-    databaseURL: "https://project-id.firebaseio.com",
-    projectId: "project-id",
-    storageBucket: "project-id.appspot.com",
-    messagingSenderId: "sender-id",
-    appId: "app-id",
-    measurementId: "G-measurement-id",
-}
+import firebase from 'firebase' 
 
-
-export const login = (e: any) => {
+export const login = (e: any, email : string, password : string) => {
     e.preventDefault();
 
-    return 'Hello World';
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode);
+        console.log(errorMessage);
+        // ...
+    }); 
+    console.log('Hello World')
 }
+
+export const register = (e: any, name : string, email : string, password : string) => {
+    /*firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    });*/
+    console.log("mendes");
+}
+
