@@ -2,7 +2,6 @@ import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid'; 
 import {Link} from 'react-router-dom';
 import './style.css';
-import { login } from '../../../../services/auth';
 
 interface IStates {
     email : string;
@@ -29,7 +28,7 @@ export default class Login extends PureComponent<{}, IStates> {
                             <label htmlFor="checkbox">Remember me</label>
                         </div>
                         <div className="buttom-sign-in">
-                            <input name="buttom" value="Sign-in" type="submit" onClick={(e) => login(e, this.state.email, this.state.password)}/> 
+                            <input name="buttom" value="Sign-in" type="submit"/> 
                         </div>
                         <span>
                             New here? Create your account <i><Link to="/register">now!</Link></i>
