@@ -1,6 +1,7 @@
 import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Hidden } from '@material-ui/core';
+import './style.css';
 
 export default class ShowCase extends PureComponent<{},{}> {
     render(){
@@ -15,12 +16,12 @@ export default class ShowCase extends PureComponent<{},{}> {
                 </Hidden>
                 <Grid item xs={12} md={4}>
                     <div className="board">
-                        Board
+                        <h3 className="board_title">VS IA</h3>
                     </div>
                 </Grid>
                 <Hidden>
                     <Grid item xs={12} md={4}>
-                        <div className="login_register">
+                        <div className="auth"> 
                             Login
                         </div>
                     </Grid>

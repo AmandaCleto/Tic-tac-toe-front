@@ -8,7 +8,7 @@ class Header extends PureComponent {
         return ( 
         <header>
            <h2 className="symbol">#</h2>
-           <h1>Tik Tak Toe - Master</h1> 
+           <h1 className="header_title">Tik Tak Toe - Master</h1> 
            <Hidden smDown>
                 <div className="buttons">
                     <Link to='/login'>Login</Link>
