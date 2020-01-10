@@ -17,8 +17,17 @@ export default class ShowCase extends PureComponent<{},{}> {
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} md={4}>
-                    <div className="board">
-                        <h3 className="board_title">VS IA</h3>
+                    <div className="lobby">
+                        <h3 className="lobby_title">VS IA</h3>
+                        <div className="lobby_board">
+                            
+                        </div>
+                        <div className="lobby_previous">
+
+                        </div>
+                        <div className="lobby_next">
+
+                        </div>
                     </div>
                 </Grid>
                 <Hidden>
