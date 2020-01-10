@@ -30,7 +30,7 @@ export default class ShowCase extends PureComponent<{},{}> {
                         </div>
                     </div>
                 </Grid>
-                <Hidden>
+                <Hidden xsDown>
                     <Grid item xs={12} md={4}>
                         <div className="auth"> 
                             Login
