@@ -10,7 +10,9 @@ export default class ShowCase extends PureComponent<{},{}> {
                 <Hidden xsDown>
                     <Grid item xs={12} md={4}>
                         <div className="ranking">
-                            Ranking
+                            <div className="rankign_title">
+                                Ranking
+                            </div>
                         </div>
                     </Grid>
                 </Hidden>
