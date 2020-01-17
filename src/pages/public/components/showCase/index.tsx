@@ -20,11 +20,11 @@ export default class ShowCase extends PureComponent<{},{}> {
                     <div className="lobby">
                         <h3 className="lobby_title">VS IA</h3>
                         <div className="lobby_mode">
-                            <div className="lobby_previous" />
+                            <div className="lobby_arrow --previous" />
                             <div className="lobby_board">
                                 <div className="board_button" />                              
                             </div>
-                            <div className="lobby_next" />
+                            <div className="lobby_arrow --next" />
                         </div>
                     </div>
                 </Grid>
