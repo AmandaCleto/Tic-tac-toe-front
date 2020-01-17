@@ -16,3 +16,8 @@
     height: 200px;
     border-radius: 6px;
 }
+
+.lobby_mode {
+    background-color: orange;
+    width: 50%;
+}
