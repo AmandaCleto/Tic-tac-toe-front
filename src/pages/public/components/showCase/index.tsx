@@ -1,6 +1,7 @@
 import React,{PureComponent} from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Hidden } from '@material-ui/core';
+import LobbyMode from './components/LobbyMode';
 import './style.css';
 
 export default class ShowCase extends PureComponent<{},{}> {
@@ -19,13 +20,7 @@ export default class ShowCase extends PureComponent<{},{}> {
                 <Grid item xs={12} md={4}>
                     <div className="lobby">
                         <h3 className="lobby_title">VS IA</h3>
-                        <div className="lobby_mode">
-                            <div className="lobby_arrow --previous" />
-                            <div className="lobby_board">
-                                <div className="board_button" />                              
-                            </div>
-                            <div className="lobby_arrow --next" />
-                        </div>
+                        <LobbyMode />
                     </div>
                 </Grid>
                 <Hidden xsDown>

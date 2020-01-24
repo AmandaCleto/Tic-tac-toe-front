@@ -1,0 +1,17 @@
+.lobby_board {
+    background-color: #2A2A35;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.board_button {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+}

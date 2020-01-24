@@ -9,41 +9,14 @@
 .lobby {
     background-color: #B75E41;
     width: calc(100% - 72px);
-    height: 400px;
+    height: calc(100vh - 101px);
     padding: 36px;
+    margin-top: 0;
 }
 
-.lobby_board {
-    background-color: #2A2A35;
-    width: 200px;
-    height: 200px;
-    border-radius: 6px;
-    align-items: center;
-}
-
-.lobby_mode {
-    background-color: orange;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 0 24px 0;
-    border-radius: 4px;
-}
-
-.lobby_arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-.--previous {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-}
-
-.--next {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+@media screen and (max-width: 320px) {
+    .lobby {
+        width: calc(100% - 24px);
+        padding: 12px;
+    }
 }
