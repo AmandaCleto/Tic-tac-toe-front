@@ -1,6 +1,6 @@
-import React,{PureComponent} from 'react';
+import React,{PureComponent} from 'react'; 
 import Grid from '@material-ui/core/Grid';
-import { Hidden } from '@material-ui/core';
+import Hidden from '@material-ui/core/Hidden';
 import LobbyMode from './components/LobbyMode';
 import './style.css';
 

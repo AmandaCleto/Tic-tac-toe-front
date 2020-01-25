@@ -14,9 +14,10 @@
     margin-top: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 720px) {
     .lobby {
         width: calc(100% - 24px);
         padding: 12px;
     }
+    .lobby_button {}
 }
