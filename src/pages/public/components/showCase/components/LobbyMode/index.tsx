@@ -4,8 +4,27 @@ import './style.css';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 
-export default class LobbyMode extends PureComponent<{},{}> {
+interface IState {
+    title: string;
+    background: string;
+    board: number; 
+}
+
+export default class LobbyMode extends PureComponent<{}, IState> {
+
+    constructor(props:{}) {
+        super(props);
+        this.state = {
+            title: 'VS IA',
+            background: '.bgVSIA',
+            board: 1 
+        }
+    }
+
     render() {
+
+        const { title } = this.state; 
+      
 
         return (
             <div className="lobby_mode">

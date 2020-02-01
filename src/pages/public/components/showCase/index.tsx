@@ -19,7 +19,6 @@ export default class ShowCase extends PureComponent<{},{}> {
                 </Hidden>
                 <Grid item xs={12} md={4}>
                     <div className="lobby">
-                        <h3 className="lobby_title">VS IA</h3>
                         <LobbyMode />
                     </div>
                 </Grid>
